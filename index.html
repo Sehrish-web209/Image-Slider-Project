@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">My Gallery App</h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+    <button class="all-btn" onclick="filterImages('all')">All</button>
+    <button class="choco-btn" onclick="filterImages('chocolate')">Chocolate</button>
+    <button class="nature-btn" onclick="filterImages('nature')">Nature</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+    <div class="image-card chocolate">
+        <img src="images/chocolate.jpeg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image-card nature">
+        <img src="images/Flower.jpeg" onclick="openLightbox(this)">
+    </div>
+
+    <div class="image-card nature">
+        <img src="images/Sky.jpeg" onclick="openLightbox(this)">
+    </div>
+</div>
+
+<!-- Lightbox -->
+<!-- Lightbox -->
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">✖</span>
+
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+
+    <img id="lightbox-img">
+
+    <button class="next" onclick="changeSlide(1)">❯</button>
+    <!-- DOTS -->
+    <div class="dots"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
