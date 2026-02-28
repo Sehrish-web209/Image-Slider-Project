@@ -70,6 +70,6 @@ Hover over buttons for animated effects.
 
 👨‍💻 Author
 
-Sehrish – IT Student at University Of Chakwal
+Sehrish Maqbool – IT Student at University Of Chakwal
 
 Personal Project as a part of Internship Journey – Showcasing front-end web development skills with an interactive gallery & slider.
